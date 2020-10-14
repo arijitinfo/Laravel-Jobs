@@ -35,6 +35,7 @@ class Job extends \Eloquent {
 	 * @param  string $slug The slug of the job to find
 	 * @return Job Instance of Fbf\LaravelJobs\Job
 	 */
+	
 	public static function findBySlug($slug)
 	{
 		return self::where('status','=',Job::APPROVED)
